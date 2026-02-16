@@ -3,13 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Number Generator</title>
+    <meta name="description" content="Referral-based crypto exchange guide with quick comparison and signup links.">
+    <title>King Referral Hub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Random Number Generator</h1>
-    <button id="generateBtn">Generate Random Number</button>
-    <p>Your random number is: <span id="randomNumber"></span></p>
+    <div class="bg-shape bg-shape-a" aria-hidden="true"></div>
+    <div class="bg-shape bg-shape-b" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <a class="logo" href="#">KING REF HUB</a>
+        <nav class="main-nav">
+            <a href="#exchanges">Exchanges</a>
+            <a href="#compare">Compare</a>
+            <a href="#faq">FAQ</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <p class="badge">Crypto Referral Landing</p>
+            <h1>Pick The Right Exchange,<br>Claim The Better Signup Deal.</h1>
+            <p class="hero-copy">
+                Compare major exchanges, see estimated fee/bonus conditions, and join through my referral links in one page.
+            </p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="#exchanges">View Exchange Deals</a>
+                <a class="btn btn-ghost" href="#guide">How It Works</a>
+            </div>
+            <div class="metrics">
+                <article>
+                    <p class="metric-label">Tracked Link Clicks</p>
+                    <p id="totalClicks" class="metric-value">0</p>
+                </article>
+                <article>
+                    <p class="metric-label">Top Interest</p>
+                    <p id="topExchange" class="metric-value">No data yet</p>
+                </article>
+                <article>
+                    <p class="metric-label">Live Exchanges</p>
+                    <p id="exchangeCount" class="metric-value">0</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="exchanges" class="section">
+            <div class="section-head">
+                <h2>Exchange Referral Deals</h2>
+                <p>Replace each placeholder URL with your real referral link.</p>
+            </div>
+            <div id="exchangeGrid" class="exchange-grid"></div>
+        </section>
+
+        <section id="compare" class="section">
+            <div class="section-head">
+                <h2>Quick Comparison</h2>
+                <p>Simple view for first-time visitors deciding where to start.</p>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Exchange</th>
+                            <th>Offer</th>
+                            <th>Fee Tier</th>
+                            <th>KYC</th>
+                            <th>Best For</th>
+                        </tr>
+                    </thead>
+                    <tbody id="comparisonBody"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="guide" class="section guide">
+            <div class="section-head">
+                <h2>How To Use This Page</h2>
+            </div>
+            <ol>
+                <li>Pick an exchange card based on your trading style.</li>
+                <li>Click "Join With Referral".</li>
+                <li>Create your account and complete required verification.</li>
+                <li>Start trading to activate the referral promotion.</li>
+            </ol>
+        </section>
+
+        <section id="faq" class="section">
+            <div class="section-head">
+                <h2>FAQ</h2>
+            </div>
+            <div class="faq-list">
+                <details>
+                    <summary>Does using your referral link cost me extra?</summary>
+                    <p>Usually no. Most exchanges provide either equal or better bonus/fee conditions through referral links, but always verify the final signup screen.</p>
+                </details>
+                <details>
+                    <summary>Can promotion terms change?</summary>
+                    <p>Yes. Exchange campaigns and rewards can change without notice. Check each exchange terms before deposit or trading.</p>
+                </details>
+                <details>
+                    <summary>Is this financial advice?</summary>
+                    <p>No. This page is informational and promotional only. You should make your own investment decisions and manage risk carefully.</p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Disclosure: This site uses referral links and may earn commission when you sign up and trade.</p>
+        <p>Risk Notice: Crypto assets are volatile and involve substantial risk.</p>
+    </footer>
 
     <script src="main.js"></script>
 </body>
